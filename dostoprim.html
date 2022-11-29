@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="./style3.css" />
+    <title>TrusTTravel</title>
+    <!-- <script src="./index.js" defer></script> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <script
+      src="https://kit.fontawesome.com/7782b62f54.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ХЭДЭР -->
+    <header>
+      <div class="header-inner">
+        <div class="navigation">
+          <div class="logo">
+            <a href="./index.html"
+              ><img src="./img/trustTravel2 1.png" alt=""
+            /></a>
+          </div>
+          <div class="text-logo">
+            <a href="./index.html"
+              ><img src="./img/trustTravel2 2.png" alt=""
+            /></a>
+          </div>
+          <nav>
+            <ul class="list">
+              <li class="item">
+                <a href="./index.html #commp" class="item-link">О нас</a>
+              </li>
+              <li class="item">
+                <a href="./index.html #game" class="item-link">Геймификация</a>
+              </li>
+              <li class="item">
+                <a href="./dostoprim.html" class="item-link"
+                  >Достопримечательности</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="phone">
+            <a href="./registr.html"
+              ><button class="authorization">Авторизоваться</button></a
+            >
+          </div>
+        </div>
+        <section class="top-nav">
+          <div class="ourlogo">
+            <div class="logo">
+              <img src="./img/trustTravel2 1.png" alt="" />
+            </div>
+            <div class="text-logo">
+              <img src="./img/trustTravel2 2.png" alt="" />
+            </div>
+          </div>
+          <div class="phone">
+            <a href="./registr.html"
+              ><button class="authorization">Авторизоваться</button></a
+            >
+          </div>
+          <input id="menu-toggle" type="checkbox" />
+          <label class="menu-button-container" for="menu-toggle">
+            <div class="menu-button"></div>
+          </label>
+          <ul class="menu">
+            <li><a href="#commp" class="item-link">О нас</a></li>
+            <li><a href="#game" class="item-link">Геймификация</a></li>
+            <li>
+              <a href="./dostoprim.html" class="item-link"
+                >Достопримечательности</a
+              >
+            </li>
+          </ul>
+        </section>
+      </div>
+    </header>
+    <!-- left-panel -->
+    <section>
+      <div class="coontainer">
+        <div class="carrd">
+          <div class="nz">
+            <div class="podbor">
+              <div class="textik">
+                <p>
+                  <b>Фильтры</b>
+                  <button class="knop">Сбросить всё</button>
+                </p>
+              </div>
+              <div class="polosa"></div>
+              <div class="filters">
+                <div class="filter">
+                  <div class="place">
+                    <form action="handler.php">
+                      <p>
+                        <b>Место</b>
+                      </p>
+                      <p>
+                        <input
+                          type="radio"
+                          name="answer"
+                          value="a1"
+                        />Алматы<br />
+                        <input
+                          type="radio"
+                          name="answer"
+                          value="a2"
+                        />Астана<br />
+                        <input
+                          type="radio"
+                          name="answer"
+                          value="a2"
+                        />Актау<br />
+                        <input
+                          type="radio"
+                          name="answer"
+                          value="a2"
+                        />Туркестан<br />
+                      </p>
+                    </form>
+                  </div>
+                  <div class="polosa"></div>
+                  <div class="type">
+                    <form action="handler.php">
+                      <p>
+                        <b>Тип тура</b>
+                      </p>
+                      <p>
+                        <input type="radio" name="answer" value="a1" />Отдых и
+                        развлечение<br />
+                        <input
+                          type="radio"
+                          name="answer"
+                          value="a2"
+                        />Исторический<br />
+                        <input
+                          type="radio"
+                          name="answer"
+                          value="a2"
+                        />Природный<br />
+                        <input
+                          type="radio"
+                          name="answer"
+                          value="a2"
+                        />Культурный<br />
+                      </p>
+                    </form>
+                  </div>
+                  <div class="polosa"></div>
+                  <div class="age">
+                    <form action="handler.php">
+                      <p>
+                        <b>Ваш возраст</b>
+                      </p>
+                      <p>
+                        <input
+                          type="radio"
+                          name="answer"
+                          value="a1"
+                        />Молодой(до 18 лет)<br />
+                        <input type="radio" name="answer" value="a2" />Зрелый
+                        (от 19 до 34)<br />
+                        <input type="radio" name="answer" value="a2" />Средний
+                        (от 35 до 59)<br />
+                        <input type="radio" name="answer" value="a2" />Пожилой
+                        (60+)<br />
+                      </p>
+                    </form>
+                  </div>
+                  <div class="polosa"></div>
+                  <div class="age">
+                    <form action="handler.php">
+                      <p>
+                        <b>Время до пункта назначения</b>
+                      </p>
+                      <p>
+                        <input type="radio" name="answer" value="a1" />До 30
+                        минут<br />
+                        <input type="radio" name="answer" value="a2" />От 30 до
+                        60 минут<br />
+                        <input type="radio" name="answer" value="a2" />От 60 до
+                        90 минут<br />
+                        <input type="radio" name="answer" value="a2" />От 90
+                        минут<br />
+                      </p>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <button class="knoop">Подобрать!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- наши туры -->
+    <section>
+      <div class="slider middle">
+        <div class="slides">
+          <input type="radio" name="r" id="r1" checked />
+          <input type="radio" name="r" id="r2" />
+
+          <div class="slide s1">
+            <div class="container wee">
+              <div class="together">
+                <div class="nashi">
+                  <!-- <h1 class="texxt"><b></b></h1> -->
+                  <div class="toory">
+                    <div class="toory-img">
+                      <img src="./img/mount.jpg" alt="" />
+                    </div>
+
+                    <div class="toory-text">
+                      <h1>Название</h1>
+
+                      <p class="pizza"><b>★★★★★</b></p>
+                      <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Nesciunt, deserunt?
+                      </p>
+                    </div>
+                    <button class="heart">♡</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container wee">
+              <div class="together">
+                <div class="nashi">
+                  <div class="toory">
+                    <div class="toory-img">
+                      <img src="./img/mount.jpg" alt="" />
+                    </div>
+
+                    <div class="toory-text">
+                      <h1>Название</h1>
+
+                      <p class="pizza"><b>★★★★★</b></p>
+                      <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Nesciunt, deserunt?
+                      </p>
+                    </div>
+                    <button class="heart">♡</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container wee">
+              <div class="together">
+                <div class="nashi">
+                  <div class="toory">
+                    <div class="toory-img">
+                      <img src="./img/mount.jpg" alt="" />
+                    </div>
+
+                    <div class="toory-text">
+                      <h1>Название</h1>
+
+                      <p class="pizza"><b>★★★★★</b></p>
+                      <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Nesciunt, deserunt?
+                      </p>
+                    </div>
+                    <button class="heart">♡</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="s2">
+            <div class="slide">
+              <div class="container we">
+                <div class="together">
+                  <div class="nashi">
+                    <h1 class="texxt"><b>Наши туры</b></h1>
+                    <div class="toory">
+                      <div class="toory-img">
+                        <img src="./img/nature.jpg" alt="" />
+                      </div>
+
+                      <div class="toory-text">
+                        <h1>Название</h1>
+
+                        <p class="pizza"><b>★★★★★</b></p>
+                        <p>
+                          Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Nesciunt, deserunt?
+                        </p>
+                      </div>
+                      <button class="heart">♡</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container weee">
+                <div class="together">
+                  <div class="nashi">
+                    <div class="toory">
+                      <div class="toory-img">
+                        <img src="./img/mount.jpg" alt="" />
+                      </div>
+
+                      <div class="toory-text">
+                        <h1>Название</h1>
+
+                        <p class="pizza"><b>★★★★★</b></p>
+                        <p>
+                          Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Nesciunt, deserunt?
+                        </p>
+                      </div>
+                      <button class="heart">♡</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container weee">
+                <div class="together">
+                  <div class="nashi">
+                    <div class="toory">
+                      <div class="toory-img">
+                        <img src="./img/mount.jpg" alt="" />
+                      </div>
+
+                      <div class="toory-text">
+                        <h1>Название</h1>
+
+                        <p class="pizza"><b>★★★★★</b></p>
+                        <p>
+                          Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Nesciunt, deserunt?
+                        </p>
+                      </div>
+                      <button class="heart">♡</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slideres-photo">
+          <img src="./img/54517.png" alt="" class="photo-left" />
+          <img src="./img/54517 (1).png" alt="" class="photo-right" />
+        </div>
+        <div class="bar-class">
+          <label for="r1" class="bar r1"></label>
+          <label for="r2" class="bar r2"></label>
+        </div>
+      </div>
+    </section>
+    <!-- main -->
+    <main>
+      <div class="main-wrapper">
+        <div class="main-text"><h1>Лучшие места</h1></div>
+        <div class="main-cont">
+          <div class="main-cards">
+            <div class="main-card">
+              <img src="./img/nature.jpg" alt="" />
+            </div>
+            <div class="main-card">
+              <img src="./img/iceland.avif" alt="" />
+            </div>
+          </div>
+          <div class="main-cards">
+            <div class="main-card">
+              <img src="./img/field.avif" alt="" />
+            </div>
+            <div class="main-card">
+              <img src="./img/beach.avif" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
